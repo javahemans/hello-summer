@@ -5,6 +5,34 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Covered+By+Your+Grace" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="hello.css" rel="stylesheet" type="text/css">
+    <style>
+      img {
+        border-radius: 50%;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+                transition:         transform .8s ease-in-out;
+      }
+      img:hover {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+      }
+
+      img{
+
+          transition-property: transform;
+          transition-duration: 1s;
+      }
+      img:hover {
+          animation-name: rotate; 
+          animation-duration: 2s; 
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+      }
+
+      @keyframes rotate {
+          from {transform: rotate(0deg);}
+          to {transform: rotate(360deg);}
+      }
+    </style>
   </head>
   <body>
     <header>
